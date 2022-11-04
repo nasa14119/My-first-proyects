@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+  <script src="main.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="mx-5">
+  <!-- <div>    
+  </div> -->
+  <nav class="py-7 px-2 sticky top-0 bg-white w-100 z-50">
+    <span>
+      <img src="./assets/logo.2ae3d696.svg">
+    </span>
+    <span>
+      <img src="./assets/icon-menu.09147dcd.svg" class="nav-open" data-close="true">
+    </span>
+    <span class="nav-data-conteiner" data-close="true">
+      <ul class="nav-data">
+        <img src="./assets/icon-menu-close.018fbc42.svg" class="nav-close">
+        <li class="nav_item">
+          <a href="#">Home</a>
+        </li>
+        <li class="nav_item">
+          <a href="#">
+            New
+          </a>
+        </li>
+        <li class="nav_item">
+          <a href="#">
+            Popular
+          </a>
+        </li>
+        <li class="nav_item">
+          <a href="#">
+            Trending
+          </a>
+        </li>
+        <li class="nav_item">
+          <a href="#">
+            Categories
+          </a>
+        </li>
+      </ul>
+    </span>
+  </nav>
+  <div class="main-content-conteiner flex justify-between mb-4">
+    <main>
+      <img class="object-cover w-100 h-50 image-desktop" src="./assets/image-web-3-desktop.80273c80.jpg">
+      <img class="object-cover w-100 h-50 image-mobile" src="./assets/image-web-3-mobile.83b3ba87.jpg">
+      <div class="mt-auto grid-items pt-20">
+        <h1 class="font-bold text-5xl w-50 h-100 row-span-2">
+          The Bright Future of Web 3.0?
+        </h1>
+        <p class="pt-4 pb-10">
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of
+          the people.
+          But is it really fulfilling its promise?
+        </p>
+        <button id="readMoreBotton" class="px-10 py-2 font-bold text-white">
+          READ MORE
+        </button>
+      </div>
+    </main>
+    <article class="text-white bg-black">
+      <h2 class="nw text-2xl pb-0 font-bold p-5">
+        New
+      </h2>
+      <div class="conteiner_black px-5">
+        <div class="py-5">
+          <span class="header block py-4">
+            <a href="#">
+              Hydrogen VS Electric Cars
+            </a>
+          </span>
+          <span class="content">
+              Will hydrogen-fueled cars ever catch up to EVs?
+          </span>
+        </div>
+        <div class="py-5">
+          <span class="header block py-4">
+            <a href="#">
+              The Downsides of AI Artistry
+            </a>
+          </span>
+          <span class="content">
+            What are the possible adverse effects of on-demand AI image generation?
+          </span>
+        </div>
+        <div class="py-5">
+          <span class="header block py-4">
+            <a href="#">
+              Is VC Funding Drying Up?
+            </a>
+          </span>
+          <span class="content">
+            Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          </span>
+        </div>
+      </div>
+    </article>
+  </div>
+  <footer class="pt-5 flex pb-10">
+    <div class="flex w-100 h-auto">
+      <span class="w-30 pr-5 h-auto">
+        <img src="./assets/image-retro-pcs.f5b001aa.jpg" alt="1" width="100%" height="100%" class="inline">
+      </span>
+      <span class="flex flex-col justify-evenly w-60 h-auto">
+        <h3 class="text-3xl font-bold number">01</h3>
+        <h3 class="font-bold text-lg">
+          <a href="#">
+            Reviving Retro PCs
+          </a>
+        </h3>
+        <p class="description">
+          What happens when old PCs are given modern upgrades?
+        </p>
+      </span>
+    </div>
+    <div class="flex w-100 h-auto center-div">
+      <span class="w-30 pr-5 h-auto">
+        <img src="./assets/image-top-laptops.bc1cbac8.jpg" alt="1" width="100%" height="100%" class="inline">
+      </span>
+      <span class="flex flex-col justify-evenly w-60 h-auto">
+        <h3 class="text-3xl font-bold number">02</h3>
+        <h3 class="font-bold text-lg">
+          <a href="#">
+            Top 10 Laptops of 2022
+          </a>
+        </h3>
+        <p class="description">
+          Our best picks for various needs and budgets.
+        </p>
+      </span>
+    </div>
+    <div class="flex w-100 h-auto">
+      <span class="w-30 pr-5 h-auto">
+        <img src="./assets/image-gaming-growth.77ea9e27.jpg" alt="1" width="100%" height="100%" class="inline">
+      </span>
+      <span class="flex flex-col justify-evenly w-60 h-auto">
+        <h3 class="text-3xl font-bold number">
+          03
+        </h3>
+        <h3 class="font-bold text-lg">
+          <a href="#">
+            The Growth of Gaming
+          </a>
+        </h3>
+        <p class="description">
+          How the pandemic has sparked fresh opportunities.
+        </p>
+      </span>
+    </div>
+  </footer>
+</body>
+
+</html>
