@@ -4,7 +4,41 @@ body{
     font-size: 18px;
     font-family: 'Space Grotesk', sans-serif;
 }
-@media only screen and (min-device-width:1000px){
+.haveAcces button{
+    color:#fff;  
+    background-color:hsl(278, 68%, 11%);
+    border-radius: 20px;
+    border:none; 
+    padding: 0.5rem 3rem;
+}
+.haveAcces p{
+    color:hsl(0, 0%, 72%);
+    white-space: nowrap;
+}
+.haveAcces svg{
+    opacity:0;
+    animation: 1s animationAcces forwards;
+}
+@keyframes animationAcces {
+    0% {
+        opacity: 0;
+        transform:scale(10);
+        rotate:360deg; 
+    }
+    100% {
+        opacity:1; 
+    }
+}
+@media only screen and (min-width:1000px){
+    .haveAcces {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        justify-content: center;
+        align-items: center;
+    }
     .row-1 {
         color:hsl(0, 0%, 100%); 
         position: absolute; 
@@ -87,7 +121,13 @@ body{
     }
     
 }
-@media screen and (max-width:999px){
+@media screen and (max-width:999px) and (min-width:500px){
+    .haveAcces {
+        width:100%;
+        height: 100%;
+        margin:0; 
+        text-align: center; 
+    }
     body {
         overflow-y: scroll;
         height: 200vh; 
@@ -176,58 +216,6 @@ body{
         display: flex; 
         flex-direction: column; 
         align-items: center; 
-    }
-    .haveAcces {
-        position:fixed; 
-        top: 45%; 
-        bottom:0; 
-        display:block; 
-        width:100%;
-        text-align: center; 
-    }
-    .haveAcces svg{
-        opacity:0; 
-        position:absolute; 
-        top:35%; 
-        left:50%; 
-        transform:translate(-50%, -50%); 
-        animation: 1s animationAcces forwards;
-    }
-    .haveAcces h2 {
-        position:absolute; 
-        top:60%; 
-        left:50%; 
-        transform:translate(-50%, -50%)
-    }
-    .haveAcces p{
-        position:absolute; 
-        top:70%; 
-        left:50%; 
-        transform:translate(-50%, -50%); 
-        color:hsl(0, 0%, 72%);
-        white-space: nowrap;
-    }
-    .haveAcces button {
-        position:absolute;
-        padding: 15px 20px; 
-        width: 80%; 
-        bottom: 5px;  
-        left:50%; 
-        transform:translate(-50%, -50%);
-        color:#fff;  
-        background-color:hsl(278, 68%, 11%);
-        border:none; 
-        border-radius: 20px;
-    }
-    @keyframes animationAcces {
-        0% {
-            opacity: 0;
-            transform:scale(10);
-            rotate:360deg; 
-        }
-        100% {
-            opacity:1; 
-        }
     }
 }
 .First, .Second, .Third{
